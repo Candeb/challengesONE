@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">    
+        <title>Encriptador de texto </title>
+        <link rel="stylesheet" href="styles.css">
+        <script src= script.js ></script>       
+    </head>
+
+
+    <body>
+        <header>
+            <img src="aluralogo.png" alt="Logo de Alura">
+        </header>
+                          
+        <main>
+
+            <section>
+                <div class="texto">
+                    <textarea class="area" id="area" placeholder="Ingrese su texto aqui..." oninput="validarTextarea(this)"></textarea>  
+                </div>      
+
+                <div class="info">
+                    <p>Solo letras minúsculas y sin acentos</p>     
+                </div>    
+                    
+                        
+                    <div class="contenedor-botones">
+                        <input type="button" class="bencriptar" value="Encriptar" onclick= "aEncriptar ()">
+                        <input type="button" class="desencriptar" value="Desencriptar" onclick="aDesencriptar ()">
+                    </div>
+                    
+            </section>
+
+            <section>
+
+                    <textarea class="resultado" id="resultado1"  placeholder="Resultado..." readonly="readonly"></textarea>
+                    <div class="btncopiar">
+                    <input type="button" class="copiar" value="Copiar" onclick="copiarTexto()">
+                    </div>  
+
+            </section>    
+                  
+        </main>
+               
+       
+        <footer>
+            
+            <p class="copyrigth"> Encriptador creado por Candela - 2022</p>
+        </footer>
+    </body>
+    
+</html>
